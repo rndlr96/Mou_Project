@@ -1,0 +1,68 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:map="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+     >
+
+    <!-- center located spot for get the center loc -->
+
+    <fragment
+        android:id="@+id/map"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:name="com.google.android.gms.maps.SupportMapFragment"
+        tools:context="raydom.use_map.MapsActivity"/>
+
+    <ToggleButton
+        android:id="@+id/mGPS"
+        android:layout_width="80sp"
+        android:layout_height="80sp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_margin="10sp"/>
+
+    <Button
+        android:id="@+id/chat_button"
+        android:layout_width="80sp"
+        android:layout_height="80sp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_margin="10sp"
+        android:background="@drawable/chat_icon"
+        android:onClick="ChattingClicked"/>
+
+    <Button
+        android:id="@+id/board_add_button"
+        android:layout_width="80sp"
+        android:layout_height="80sp"
+        android:layout_alignParentRight="true"
+        android:layout_above="@id/chat_button"
+        android:layout_margin="10sp"
+        android:onClick="board_add_clicked"
+        android:visibility="gone"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/m_ID"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:background="#2F006FFF"
+        android:text=""
+        android:layout_margin="10dp"/>
+
+    <TextView
+        android:id = "@+id/cover"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="center_horizontal"
+        android:background="@drawable/image_border"/>
+
+    <WebView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id = "@+id/webView"
+        android:visibility="gone" />
+
+</RelativeLayout>

@@ -1,0 +1,351 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0sp"
+        android:layout_weight="1"
+        android:orientation="vertical"
+        android:background="#FF37ABE3">
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0sp"
+            android:layout_weight="1"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0sp"
+            android:layout_weight="3"
+            android:orientation="horizontal">
+
+            <View
+                android:layout_width="0sp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"/>
+
+            <ImageView
+                android:id="@+id/profilPic"
+                android:layout_width="0sp"
+                android:layout_height="fill_parent"
+                android:layout_weight="5"
+                android:scaleType="fitXY"
+                android:src="@drawable/user_icon"/>
+
+            <View
+                android:layout_width="0sp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"/>
+
+            <LinearLayout
+                android:layout_width="0sp"
+                android:layout_height="match_parent"
+                android:layout_weight="6"
+                android:orientation="vertical">
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="0sp"
+                    android:layout_weight="1"/>
+
+                <TextView
+                    android:id="@+id/name"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textSize="22sp"
+                    android:textColor="#FFFFFFFF"
+                    android:gravity="center"
+                    android:text="Lee Sunjun"
+                    android:layout_weight="1"/>
+
+                <TextView
+                    android:id="@+id/id"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textSize="15sp"
+                    android:textColor="#FFFFFFFF"
+                    android:gravity="center"
+                    android:text="starj0822"
+                    android:layout_weight="1"/>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="0sp"
+                    android:layout_weight="1"/>
+
+            </LinearLayout>
+
+            <View
+                android:layout_width="0sp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"/>
+
+            <View
+                android:layout_width="2sp"
+                android:layout_height="fill_parent"
+                android:background="#FFFFFFFF"/>
+
+
+            <ImageButton
+                android:layout_width="0sp"
+                android:layout_height="wrap_content"
+                android:layout_weight="4"
+                android:background="#00FFFFFF"
+                android:src="@drawable/setting_icon"
+                android:scaleType="fitCenter"
+                android:onClick="setting_clicked"/>
+
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0sp"
+            android:layout_weight="1"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0sp"
+        android:layout_weight="3"
+        android:orientation="horizontal"
+        android:background="#FFFFFFFF">
+
+        <View
+            android:layout_width="0sp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"/>
+
+        <LinearLayout
+            android:layout_width="0sp"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:layout_weight="20">
+
+            <ScrollView
+                android:layout_width="match_parent"
+                android:layout_height="0sp"
+                android:layout_weight="5">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="20sp"
+                        android:background="@null"
+                        android:textSize="30sp"
+                        android:textColor="#FF000000"
+                        android:textAlignment="viewStart"
+                        android:text="Facilities"/>
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="2sp"
+                        android:background="#FFB6B6B6"/>
+
+                    <LinearLayout
+                        android:id="@+id/facility_list"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="30sp"
+                        android:orientation="vertical">
+
+                        <Button
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="10sp"
+                            android:layout_marginLeft="10sp"
+                            android:background="@drawable/gray_button_click"
+                            android:textSize="22sp"
+                            android:textAlignment="viewStart"
+                            android:text="Toilet"
+                            android:onClick="toilet_b_clicked"/>
+
+                        <Button
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="10sp"
+                            android:layout_marginLeft="10sp"
+                            android:background="@drawable/gray_button_click"
+                            android:textSize="22sp"
+                            android:textAlignment="viewStart"
+                            android:text="Wifi"
+                            android:onClick="wifi_b_clicked"/>
+
+                        <Button
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="10sp"
+                            android:layout_marginLeft="10sp"
+                            android:background="@drawable/gray_button_click"
+                            android:textSize="22sp"
+                            android:textAlignment="viewStart"
+                            android:text="Smoking Area"
+                            android:onClick="smoking_b_clicked"/>
+
+                    </LinearLayout>
+
+                    <TextView
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="20sp"
+                        android:background="@null"
+                        android:textSize="30sp"
+                        android:textColor="#FF000000"
+                        android:textAlignment="viewStart"
+                        android:text="Landmarks"/>
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="2sp"
+                        android:background="#FFB6B6B6"/>
+
+                    <LinearLayout
+                        android:id="@+id/landmark_list"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="30sp"
+                        android:orientation="vertical">
+
+                        <Button
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="10sp"
+                            android:layout_marginLeft="10sp"
+                            android:background="@drawable/gray_button_click"
+                            android:textSize="22sp"
+                            android:textAlignment="viewStart"
+                            android:text="Statue of girl"
+                            android:onClick="SOG_b_clicked"/>
+
+                    </LinearLayout>
+
+                    <TextView
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="20sp"
+                        android:background="@drawable/gray_button_click"
+                        android:textSize="30sp"
+                        android:textColor="#FF000000"
+                        android:textAlignment="viewStart"
+                        android:text="Bookmarks" />
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="2sp"
+                        android:background="#FFB6B6B6"/>
+
+                    <LinearLayout
+                        android:id="@+id/bookmark_list"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="30sp"
+                        android:orientation="vertical">
+
+                        <Button
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="10sp"
+                            android:layout_marginLeft="10sp"
+                            android:background="@drawable/gray_button_click"
+                            android:textSize="22sp"
+                            android:textAlignment="viewStart"
+                            android:text="Book Marker"
+                            android:onClick="Bookmark_b_clicked"/>
+
+                        <Button
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="10sp"
+                            android:layout_marginLeft="10sp"
+                            android:background="@drawable/gray_button_click"
+                            android:textSize="22sp"
+                            android:textAlignment="viewStart"
+                            android:text="Personal Marker"
+                            android:onClick="personal_b_clicked"/>
+
+                    </LinearLayout>
+
+                    <TextView
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="20sp"
+                        android:background="@null"
+                        android:textSize="30sp"
+                        android:textColor="#FF000000"
+                        android:textAlignment="viewStart"
+                        android:text="Others"/>
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="2sp"
+                        android:background="#FFB6B6B6"/>
+
+                    <LinearLayout
+                        android:id="@+id/board_list"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="30sp"
+                        android:orientation="vertical">
+
+                        <Button
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="10sp"
+                            android:layout_marginLeft="10sp"
+                            android:background="@drawable/gray_button_click"
+                            android:textSize="22sp"
+                            android:textAlignment="viewStart"
+                            android:text="Board Marker"
+                            android:onClick="board_b_clicked"/>
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+            </ScrollView>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0sp"
+                android:layout_weight="1.4"
+                android:orientation="horizontal">
+
+                <Button
+                    android:id="@+id/bm_adding"
+                    android:text="Personal Add"
+                    android:layout_width="0sp"
+                    android:layout_height="fill_parent"
+                    android:layout_weight="1"
+                    android:layout_margin="20sp"
+                    android:background="@drawable/empty_button"
+                    android:onClick="bm_add_clicked"/>
+
+                <Button
+                    android:id="@+id/marker_adding"
+                    android:text="DIY Add"
+                    android:layout_width="0sp"
+                    android:layout_height="fill_parent"
+                    android:layout_weight="1"
+                    android:layout_margin="20sp"
+                    android:background="@drawable/empty_button"
+                    android:onClick="DIY_add_clicked"/>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <View
+            android:layout_width="0sp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"/>
+
+    </LinearLayout>
+
+</LinearLayout>

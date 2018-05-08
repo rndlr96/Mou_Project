@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+   >
+
+    <LinearLayout
+        android:id="@+id/textBox"
+        android:layout_width="match_parent"
+        android:layout_height="40sp"
+        android:layout_alignParentBottom="true"
+        android:orientation="horizontal"
+        android:background="#AACCCCCC" >
+
+        <EditText
+            android:id="@+id/input"
+            android:textSize="15sp"
+            android:layout_margin="7sp"
+            android:layout_weight="15"
+            android:layout_alignParentBottom="true"
+            android:layout_width="0sp"
+            android:layout_height="match_parent"
+            android:hint="  Type your Message . . ."
+            android:background="#FFEEEEEE"
+            />
+
+        <Button
+            android:id="@+id/fab"
+            android:layout_width="0sp"
+            android:layout_height="match_parent"
+            android:layout_weight="3"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentRight="true"
+            android:tint="@android:color/white"
+            android:layout_margin="4sp"
+            android:text="send"
+            android:textColor="#FFFFFFFF"
+            android:background="#FF37ABE3"
+            android:layout_toLeftOf="@id/input"
+            />
+
+    </LinearLayout>
+
+    <ListView
+        android:id="@+id/list"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@id/textBox"
+        android:layout_alignParentTop="true"
+        android:layout_marginBottom="16dp"
+        android:divider="@android:color/transparent"
+        android:dividerHeight="16dp"
+        android:stackFromBottom="true"
+        android:transcriptMode="alwaysScroll" />
+
+</RelativeLayout>
